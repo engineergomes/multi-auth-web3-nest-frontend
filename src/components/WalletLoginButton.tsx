@@ -1,7 +1,5 @@
 import { useWallet } from "@solana/wallet-adapter-react";
 import { useWalletModal } from "@solana/wallet-adapter-react-ui";
-import React, { useCallback, useEffect } from "react";
-import { sign } from "tweetnacl";
 import { WalletIcon } from "@/assets/WalletIcon";
 
 const WalletLoginButton = () => {

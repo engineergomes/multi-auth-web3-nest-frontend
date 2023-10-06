@@ -1,6 +1,5 @@
 import { apiBaseURL } from "@/configs/basUrl";
 import { log } from "console";
-import React, { useEffect } from "react";
 import { TwitterLogo } from "@/assets/SocialLogos";
 
 const TwitterLoginButton = () => {
