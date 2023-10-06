@@ -2,6 +2,7 @@ import WalletContextProvider from "@/context/WalletContextProvider";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import QueryProvider from "@/context/ReactQueryProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,9 +18,11 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<WalletContextProvider>
-				<body className={inter.className}>{children}</body>
-			</WalletContextProvider>
+			<QueryProvider>
+				<WalletContextProvider>
+					<body className={inter.className}>{children}</body>
+				</WalletContextProvider>
+			</QueryProvider>
 		</html>
 	);
 }

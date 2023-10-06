@@ -1,3 +1,10 @@
+import LogoutButton from "@/components/LogoutButton";
+
 export default function Dashboard() {
-	return <p>Youre Logged In!</p>;
+	return (
+		<div className="flex flex-col w-full gap-10">
+			<h2>Youre Logged In!</h2>
+			<LogoutButton />
+		</div>
+	);
 }

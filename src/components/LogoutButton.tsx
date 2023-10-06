@@ -1,3 +1,4 @@
+"use client";
 import React, { useState, forwardRef, HTMLAttributes } from "react";
 import LogoutModal from "./LogoutModal";
 import { useProfile, useLogout } from "@/hooks/onUser";
